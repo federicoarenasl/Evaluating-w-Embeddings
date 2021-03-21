@@ -15,13 +15,13 @@ All of these experiments will be done on the benchmark balanced EMNIST dataset [
 Our first network, purposedly designed to show bad generalization performance is a Network for 100 Epochs, using Stocahstic Gradient Descent and Adam optimizer with a mini-batch size of 100, with one Affine Layer composed of 100 Hidden Units followed by a ReLu non-linearity, with learnng rate of 0.001 and all biases and weights initialised to 0. The generalization problem is evident as illustrated by the following figure.
 
 <p align="center">
-<img  src="plots/H-PCA_dist_semantics.png" width="600">
-<img  src="plots/PPMI_dist_semantics.png" width="600">
+<img  src="plots/H-PCA_dist_semantics.png" width="400">
+<img  src="plots/PPMI_dist_semantics.png" width="400">
 </p>
 
 After a thorough hyperparameter search, we are able to find a model that, solely with regularisation, (1) greatly lower the Train/Test Error Gap from a 1.42 to a 0.13 Gap. Lower the Train/Test Accuracy Gap which went from a 14% to a 3.57% Accuracy Gap. Additionally, (2) we were able to increase the Test Accuracy from 81.4% to 84.03%. The Final Model is able to stably converge to a local minimum after 15 Epochs of training:
 
 <p align="center">
-<img  src="plots/PPMI_dendrogram.png" width="600">
-<img  src="plots/H-PCA_dendrogram.png" width="600">
+<img  src="plots/PPMI_dendrogram.png" width="400">
+<img  src="plots/H-PCA_dendrogram.png" width="400">
 </p>
